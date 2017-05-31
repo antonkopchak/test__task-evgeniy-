@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Flow";
+    src: url("FlowRegular.eot"); /* IE9 */
+    src: url("FlowRegular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("FlowRegular.woff") format("woff"), /* chrome, firefox */
+    url("FlowRegular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("FlowRegular.svg#Flow") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
