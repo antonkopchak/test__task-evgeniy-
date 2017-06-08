@@ -9,7 +9,9 @@
   "author": "Anton Kopchak",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "bxslider": "^4.2.11",
+    "gulp": "^3.9.1",
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",

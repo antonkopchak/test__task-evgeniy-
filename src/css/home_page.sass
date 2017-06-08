@@ -2,9 +2,9 @@
   width: 1140px
   margin: 0 auto
 
+
 .b-first-section
   position: relative
-  height: 590px
   background: linear-gradient(to right, rgba(43,128,202,1) 0%, rgba(118,182,255,1) 100%)
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b80ca', endColorstr='#76b6ff', GradientType=1 )
   z-index: 2
@@ -13,60 +13,68 @@
   &__name
     position: relative
     z-index: 2
-    margin: 0
+    margin: 0 0 25px 0
     padding-top: 185px
     font-size: 78px
     font-family: Ubuntu-Bold, sans-serif
     color: rgb(255, 255, 255)
 
+    &:after
+      content: "Imagine"
+      position: absolute
+      top: 40%
+      left: 0
+      right: 0
+      font-size: 250px
+      font-family: Ubuntu-Bold, sans-serif
+      color: rgba(255, 255, 255, 0.051)
+      text-transform: uppercase
+
+
   &__btn
     position: relative
     z-index: 2
-    margin: 25px 0 0 0
-    border: 0
+    display: inline-block
+    border: 1px solid #cccccc
     border-radius: 4px
-    height: 70px
-    width: 295px
+    padding: 15px 35px
+    text-decoration: none
     font-size: 30px
     font-family: Ubuntu-Light, sans-serif
     color: rgb(69, 146, 220)
     background: rgb(255, 255, 255)
 
-  &__shadow
-    position: relative
-    z-index: 1
-    margin: -280px auto
-    font-size: 250px
-    font-family: Ubuntu-Bold, sans-serif
-    color: rgba(255, 255, 255, 0.051)
-    text-transform: uppercase
+    &:hover
+      box-shadow: 0 0 3px rgba(0,0,0,0.3)
+      background: linear-gradient(to bottom, rgba(255,255,255,0.97) 48%, rgba(239,246,252,0.97) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eff6fc', GradientType=0 )
 
   &__clouds
     position: relative
 
     &-one
       position: absolute
-      top: 20px
+      top: -290px
       right: 20px
 
     &-second
       position: absolute
-      top: 350px
+      top: 50px
       right: 370px
 
     &-third
       position: absolute
-      top: -50px
+      top: -250px
       left: 20px
 
     &-text
       position: absolute
-      top: 310px
+      top: 70px
       right: 170px
 
   &__menu
     width: 100%
-    margin: 433px 0 0 0
+    margin: 185px 0 0 0
     padding: 0
     list-style-type: none
     line-height: 60px
@@ -98,34 +106,26 @@
 
 
 .b-second-section
-  overflow: hidden
 
   &__pluses
-    margin: 0 40px
-    width: 200px
+    padding: 40px
+    overflow: hidden
+    width: 25%
     text-align: center
     float: left
 
   &__circle
-    margin-top: 100px
+    margin: 100px 0 0 0
     padding: 50px
     border-radius: 50%
     border: 2px solid #a0cbf9
+
 
     &-change
       margin-top: 100px
       padding: 65px 50px
       border-radius: 50%
       border: 2px solid #a0cbf9
-
-  &__img
-    height: 90px
-    width: 100%
-
-    &-change
-      height: 60px
-      width: 100%
-
 
   &__name
     margin-top: 30px
@@ -158,15 +158,22 @@
     &-btn
       margin: 20px 0 130px 30px
       border-radius: 4px
-      padding: 0 45px
-      border: 0
-      background-color: rgb(241, 124, 45)
+      background: rgb(247, 110, 22)
       width: 361px
       height: 71px
+      text-decoration: none
       font-size: 30px
       font-family: Ubuntu-Light, sans-serif
       color: rgb(255, 255, 255)
+      display: flex
+      align-items: center
+      justify-content: center
       float: left
+
+      &:hover
+        background: rgb(241, 124, 45)
+        box-shadow: 0 0 3px rgba(0,0,0,0.3)
+
 
     &-img
       position: absolute
@@ -181,9 +188,10 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b80ca', endColorstr='#76b6ff', GradientType=1 )
   text-align: center
 
-  &__shadow
+  &:after
+    content: "First time?"
     position: absolute
-    top: -110px
+    top: 75px
     left: 0
     right: 0
     z-index: 4
@@ -253,3 +261,143 @@
       left: 30px
       width: 60px
 
+.b-four-section
+  text-align: center
+  box-shadow: 0 4px 6px -2px rgba(0,0,0,0.3)
+
+  &__text
+    font-size: 20px
+    font-family: Ubuntu-Light, sans-serif
+    font-style: italic
+    font-weight: 400
+    line-height: 1.4
+    color: rgb(151, 151, 151)
+
+  &__author
+    font-size: 14px
+    font-family: Ubuntu-Bold, sans-serif
+    color: rgb(86, 86, 86)
+
+  &__carousel
+    margin-top: 50px
+
+  &__comment
+    height: 410px
+    width: 900px!important
+    margin: 85px 115px 0
+    position: relative
+    
+    &:before
+      content: url("../images/left-quote.png")
+      position: absolute
+      top: -50px
+      left: 0
+
+    &:after
+      content: url("../images/right-quote.png")
+      position: absolute
+      top: 110px
+      right: 0
+
+
+.b-four-section__stars
+  background: url("../images/stars.png") repeat-x 0 0
+  width: 150px
+  margin: 0 auto
+
+  input[type="radio"]
+    position: absolute
+    opacity: 0
+    filter: alpha(opacity=0)
+
+  input[type="radio"].star-5:checked ~ span,
+  input[type="radio"].star-10:checked ~ span,
+  input[type="radio"].star-15:checked ~ span
+    width: 100%
+
+  input[type="radio"].star-4:checked ~ span,
+  input[type="radio"].star-9:checked ~ span,
+  input[type="radio"].star-14:checked ~ span
+    width: 80%
+
+  input[type="radio"].star-3:checked ~ span,
+  input[type="radio"].star-8:checked ~ span,
+  input[type="radio"].star-13:checked ~ span
+    width: 60%
+
+  input[type="radio"].star-2:checked ~ span,
+  input[type="radio"].star-7:checked ~ span,
+  input[type="radio"].star-12:checked ~ span
+    width: 40%
+
+  input[type="radio"].star-1:checked ~ span,
+  input[type="radio"].star-6:checked ~ span,
+  input[type="radio"].star-11:checked ~ span
+    width: 20%
+
+  label
+    display: block
+    width: 30px
+    height: 30px
+    margin: 0!important
+    padding: 0!important
+    text-indent: -999em
+    float: left
+    position: relative
+    z-index: 10
+    background: transparent!important
+    cursor: pointer
+
+    &:hover ~ span
+      background-position: 0 -30px
+
+  label.star-5:hover ~ span,
+  label.star-10:hover ~ span,
+  label.star-15:hover ~ span
+    width: 100% !important
+
+  label.star-4:hover ~ span,
+  label.star-9:hover ~ span,
+  label.star-14:hover ~ span
+    width: 80% !important
+
+  label.star-3:hover ~ span,
+  label.star-8:hover ~ span,
+  label.star-13:hover ~ span
+    width: 60% !important
+
+  label.star-2:hover ~ span,
+  label.star-7:hover ~ span,
+  label.star-12:hover ~ span
+    width: 40% !important
+
+  label.star-1:hover ~ span,
+  label.star-6:hover ~ span,
+  label.star-11:hover ~ span
+    width: 20% !important
+
+  span
+    display: block
+    width: 0
+    position: relative
+    top: 0
+    left: 0
+    height: 30px
+    background: url("../images/stars.png") repeat-x 0 -60px
+    transition: width 0.5s
+
+.bx-wrapper
+  box-shadow: none
+
+  .bx-controls-direction a
+    width: 60px
+    height: 60px
+    transform: rotate(-2deg)
+
+.bx-pager
+  display: none
+
+.bx-prev
+  background: url("../images/prev.png") no-repeat!important
+.bx-next
+  background: url("../images/next.png") no-repeat!important
