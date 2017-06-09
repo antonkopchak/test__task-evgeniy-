@@ -263,7 +263,14 @@
 
 .b-four-section
   text-align: center
-  box-shadow: 0 4px 6px -2px rgba(0,0,0,0.3)
+
+  &:after
+    content: ""
+    display: block
+    height: 3px
+    width: 100%
+    background: linear-gradient(to right, #ffffff 5%,#e8e9ea 51%,#ffffff 95%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1)
 
   &__text
     font-size: 20px
@@ -401,3 +408,134 @@
   background: url("../images/prev.png") no-repeat!important
 .bx-next
   background: url("../images/next.png") no-repeat!important
+
+
+.b-fifth-section
+  background: url("../images/background-fifth-section.png")
+  min-height: 200px
+  display: flex
+
+  &__position
+    position: relative
+
+  &__title
+    margin-top: 100px
+    display: flex
+    justify-content: center
+    font-size: 38px
+    font-family: Ubuntu-Light, sans-serif
+    font-weight: 400
+    color: rgb(86, 86, 86)
+
+  &__place
+    overflow: hidden
+    width: 25%
+    text-align: center
+    float: left
+
+  &__arrow
+
+    &-one
+      position: absolute
+      top: 300px
+      left: 223px
+      width: 105px
+
+    &-two
+      position: absolute
+      top: 300px
+      left: 527px
+      width: 115px
+
+    &-third
+      position: absolute
+      top: 300px
+      right: 220px
+      width: 135px
+
+  &__circle
+    margin: 50px 60px 0
+    border-radius: 50%
+    border: 2px solid #a0cbf9
+
+    &-two
+      margin: 40px 40px 0
+      border-radius: 50%
+      border: 2px solid #a0cbf9
+
+    &-third
+      margin: 60px 70px 0
+      border-radius: 50%
+      border: 2px solid #a0cbf9
+
+
+  &__number
+    padding: 40px
+    margin: 0
+    font-size: 62px
+    font-family: Ubuntu-Bold, sans-serif
+    color: rgb(69, 146, 220)
+
+    &-two
+      padding: 60px
+      margin: 0
+      font-size: 62px
+      font-family: Ubuntu-Bold, sans-serif
+      color: rgb(69, 146, 220)
+
+    &-third
+      padding: 30px
+      margin: 0
+      font-size: 62px
+      font-family: Ubuntu-Bold, sans-serif
+      color: rgb(69, 146, 220)
+
+
+  &__name
+    margin-top: 45px
+    font-size: 25px
+    font-family: Ubuntu-Regular, sans-serif
+    color: rgb(69, 146, 220)
+
+    &-two
+      margin-top: 20px
+      font-size: 25px
+      font-family: Ubuntu-Regular, sans-serif
+      color: rgb(69, 146, 220)
+
+    &-third
+      margin-top: 60px
+      font-size: 25px
+      font-family: Ubuntu-Regular, sans-serif
+      color: rgb(69, 146, 220)
+
+    &-four
+      margin-top: 50px
+      color: rgb(51, 162, 80)
+      font-size: 25px
+      font-family: Ubuntu-Regular, sans-serif
+
+  &__desc
+    margin: 25px 20px 270px 20px
+    font-size: 14px
+    font-family: Ubuntu-Medium, sans-serif
+    color: rgb(129, 129, 129)
+    line-height: 1.643
+
+  &__btn
+    text-align: center
+    margin: 450px auto
+    padding: 20px 20px
+    border-radius: 4px
+    background: rgb(63, 174, 92)
+    text-decoration: none
+    font-size: 37px
+    font-family: Ubuntu-Regular, sans-serif
+    color: rgb(255, 255, 255)
+    position: absolute
+    left: 0
+    right: 0
+    width: 320px
+
+    &:hover
+      background: rgb(69, 179, 41)
