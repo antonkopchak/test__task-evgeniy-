@@ -414,14 +414,24 @@
   background: url("../images/background-fifth-section.png")
   min-height: 200px
   display: flex
+  text-align: center
+  position: relative
+
+  &:before
+    content: ""
+    position: absolute
+    top: 829px
+    height: 3px
+    width: 100%
+    background: linear-gradient(to right, #ffffff 5%,#e8e9ea 51%,#ffffff 95%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1)
+
 
   &__position
     position: relative
 
   &__title
     margin-top: 100px
-    display: flex
-    justify-content: center
     font-size: 38px
     font-family: Ubuntu-Light, sans-serif
     font-weight: 400
@@ -539,3 +549,159 @@
 
     &:hover
       background: rgb(69, 179, 41)
+
+
+.b-sixth-section
+  margin-bottom: 130px
+
+  &__name
+    margin: 100px 0 50px 0
+    font-size: 37px
+    font-family: Ubuntu-Regular, sans-serif
+    color: rgb(86, 86, 86)
+    line-height: 1.2
+    text-align: center
+
+  &__item
+    width: 840px
+    margin: 10px auto
+    background: #509ae4
+    border: 1px solid #d1d1d1
+    border-radius: 5px
+    box-shadow: 0 0 10px #ddd
+    padding: 14px 0
+
+    &-picture
+      width: 840px
+      margin: 10px auto
+      background: #509ae4
+      border: 1px solid #d1d1d1
+      border-radius: 5px
+      box-shadow: 0 0 10px #ddd
+      padding: 14px 0
+      position: relative
+      
+      &:after
+        content: url("../images/item-picture.png")
+        position: absolute
+        top: 4px
+        left: -94px
+
+  &__title
+    border-radius: 5px
+    font-size: 25px
+    font-family: Ubuntu-Regular, sans-serif
+    color: rgb(255, 255, 255)
+    font-weight: normal
+    margin: 0
+
+  &__expand
+    float: left
+    cursor: pointer
+    margin: 0 10px
+    padding: 14px
+    position: relative
+
+    &:after
+      content: ""
+      position: absolute
+      top: 8px
+      left: 10px
+      border: 7px solid transparent
+      border-left: 7px solid #ffffff
+
+  &__ul
+    padding: 5px
+    overflow: hidden
+    margin: 0 50px
+
+
+  &__li
+    list-style-position: inside
+    height: 40px
+    position: relative
+    color: #ffffff
+
+    &:hover
+      color: #cccccc
+
+  &__wrap
+    position: absolute
+    top: -10px
+    left: -5px
+    font-size: 14px
+    padding: 5px
+    font-family: Ubuntu-Regular, sans-serif
+    border-bottom: 1px solid #cfcfcf
+    display: flex
+    align-items: center
+
+    &-station
+      color: #ffffff
+      padding: 10px 0
+      margin: 0 0 0 20px
+      width: 190px
+
+      &:hover
+        color: #cccccc
+
+    &-text
+      margin: 0 40px 0 205px
+      color: #bfbfbf
+
+
+      & span
+        color: #000000
+        margin-left: 5px
+
+    &-btn
+      &-read
+        padding: 5px
+        text-decoration: none
+        margin: 0 10px
+        color: #cfcfcf
+        border: 1px solid #cfcfcf
+        border-radius: 3px
+
+        &:hover
+          color: #3481cd
+          border: 1px solid #3481cd
+
+      &-order
+        padding: 5px
+        text-decoration: none
+        color: #ffffff
+        border: 1px solid #ffffff
+        border-radius: 3px
+
+        &:hover
+          color: #ffffff
+          background: #f17c2d
+          border: 1px solid #f17c2d
+
+
+
+
+.footer__roster
+
+  &-one
+    margin-top: 80px
+
+  &-li
+    display: inline-block
+    margin: 0 15px
+
+  &-a
+    display: block
+    color: #000
+    font-size: 14px
+    font-family: Ubuntu-Regular, sans-serif
+
+  &-post
+    margin-top: 80px
+    font-size: 12px
+    font-family: Ubuntu-Regular, sans-serif
+    color: rgb(195, 195, 195)
+
+
+

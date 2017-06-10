@@ -13,3 +13,16 @@ $(document).ready(function(){
         controls: true
     });
 });
+
+//===================
+//  LIST
+//  do not touch
+//===================
+
+$(document).ready(function(){
+    $(".b-sixth-section__ul").hide();
+    $(".b-sixth-section__expand").click(function(){
+        $(this).parent().next().slideToggle();
+
+    });
+});
