@@ -16,8 +16,8 @@
     margin: 0 0 25px 0
     padding-top: 185px
     font-size: 78px
-    font-family: Ubuntu-Bold, sans-serif
-    color: rgb(255, 255, 255)
+    font-family: $font-ubuntu-bold, sans-serif
+    color: $color-white
 
     &:after
       content: "Imagine"
@@ -26,7 +26,7 @@
       left: 0
       right: 0
       font-size: 250px
-      font-family: Ubuntu-Bold, sans-serif
+      font-family: $font-ubuntu-bold, sans-serif
       color: rgba(255, 255, 255, 0.051)
       text-transform: uppercase
 
@@ -35,14 +35,14 @@
     position: relative
     z-index: 2
     display: inline-block
-    border: 1px solid #cccccc
+    border: 1px solid $color-grey-hover
     border-radius: 4px
     padding: 15px 35px
     text-decoration: none
     font-size: 30px
-    font-family: Ubuntu-Light, sans-serif
-    color: rgb(69, 146, 220)
-    background: rgb(255, 255, 255)
+    font-family: $font-ubuntu-light, sans-serif
+    color: $color-blue
+    background: $color-white
 
     &:hover
       box-shadow: 0 0 3px rgba(0,0,0,0.3)
@@ -95,7 +95,7 @@
   &__a
     text-decoration: none
     font-size: 14px
-    font-family: OpenSans-Light, sans-serif
+    font-family: $font-opensans-light, sans-serif
 
     &:nth-child(2n)
       color: #7cc2ff
@@ -118,27 +118,27 @@
     margin: 100px 0 0 0
     padding: 50px
     border-radius: 50%
-    border: 2px solid #a0cbf9
+    border: 2px solid $color-light-blue
 
 
     &-change
       margin-top: 100px
       padding: 65px 50px
       border-radius: 50%
-      border: 2px solid #a0cbf9
+      border: 2px solid $color-light-blue
 
   &__name
     margin-top: 30px
     font-size: 25px
-    font-family: Ubuntu-Medium, sans-serif
-    color: rgb(69, 146, 220)
+    font-family: $font-ubuntu-medium, sans-serif
+    color: $color-blue
     line-height: 1.2
 
   &__desc
     margin-top: 20px
     font-size: 14px
-    font-family: Ubuntu-Light, sans-serif
-    color: rgb(144, 144, 144)
+    font-family: $font-ubuntu-light, sans-serif
+    color: $color-grey-light-black
     line-height: 1.5
 
   &__order
@@ -150,28 +150,28 @@
 
     &-name
       font-size: 38px
-      font-family: Ubuntu-Light, sans-serif
-      color: rgb(86, 86, 86)
+      font-family: $font-ubuntu-light, sans-serif
+      color: $color-grey-black
       float: left
       margin-left: 240px
 
     &-btn
       margin: 20px 0 130px 30px
       border-radius: 4px
-      background: rgb(247, 110, 22)
+      background: $color-orange
       width: 361px
       height: 71px
       text-decoration: none
       font-size: 30px
-      font-family: Ubuntu-Light, sans-serif
-      color: rgb(255, 255, 255)
+      font-family: $font-ubuntu-light, sans-serif
+      color: $color-white
       display: flex
       align-items: center
       justify-content: center
       float: left
 
       &:hover
-        background: rgb(241, 124, 45)
+        background: $color-orange
         box-shadow: 0 0 3px rgba(0,0,0,0.3)
 
 
@@ -196,8 +196,8 @@
     right: 0
     z-index: 4
     font-size: 190px
-    font-family: Ubuntu-Bold, sans-serif
-    color: rgba(255, 255, 255, 0.051)
+    font-family: $font-ubuntu-bold, sans-serif
+    color: $color-opacity05
     text-transform: uppercase
 
   &__name
@@ -208,12 +208,12 @@
     z-index: 5
     margin: 0
     font-size: 30px
-    font-family: Ubuntu-Light, sans-serif
-    color: rgb(255, 255, 255)
+    font-family: $font-ubuntu-light, sans-serif
+    color: $color-white
 
     &-bold
       padding-left: 10px
-      font-family: Ubuntu-Bold, sans-serif
+      font-family: $font-ubuntu-bold, sans-serif
 
   &__btn
     position: absolute
@@ -221,17 +221,17 @@
     top: 230px
     left: 50%
     margin-left: -180px
-    background: rgba(152, 36, 91, 0)
+    background: $color-opacity
     width: 360px
     height: 71px
     border-radius: 3px
-    border: 2px solid #ffffff
+    border: 2px solid $color-white
     font-size: 25px
-    font-family: Ubuntu-Light, sans-serif
-    color: #ffffff
+    font-family: $font-ubuntu-light, sans-serif
+    color: $color-white
 
     &-bold
-      font-family: Ubuntu-Bold, sans-serif
+      font-family: $font-ubuntu-bold, sans-serif
 
   &__pictures
 
@@ -274,16 +274,16 @@
 
   &__text
     font-size: 20px
-    font-family: Ubuntu-Light, sans-serif
+    font-family: $font-ubuntu-light, sans-serif
     font-style: italic
     font-weight: 400
     line-height: 1.4
-    color: rgb(151, 151, 151)
+    color: $color-grey-light-black
 
   &__author
     font-size: 14px
-    font-family: Ubuntu-Bold, sans-serif
-    color: rgb(86, 86, 86)
+    font-family: $font-ubuntu-bold, sans-serif
+    color: $color-grey-black
 
   &__carousel
     margin-top: 50px
@@ -433,9 +433,9 @@
   &__title
     margin-top: 100px
     font-size: 38px
-    font-family: Ubuntu-Light, sans-serif
+    font-family: $font-ubuntu-light, sans-serif
     font-weight: 400
-    color: rgb(86, 86, 86)
+    color: $color-grey-black
 
   &__place
     overflow: hidden
@@ -466,70 +466,70 @@
   &__circle
     margin: 50px 60px 0
     border-radius: 50%
-    border: 2px solid #a0cbf9
+    border: 2px solid $color-light-blue
+
+    &-two,
+    &-third
+      border-radius: 50%
+      border: 2px solid $color-light-blue
 
     &-two
       margin: 40px 40px 0
-      border-radius: 50%
-      border: 2px solid #a0cbf9
 
     &-third
       margin: 60px 70px 0
-      border-radius: 50%
-      border: 2px solid #a0cbf9
-
 
   &__number
     padding: 40px
     margin: 0
     font-size: 62px
-    font-family: Ubuntu-Bold, sans-serif
-    color: rgb(69, 146, 220)
+    font-family: $font-ubuntu-bold, sans-serif
+    color: $color-blue
+
+    &-two,
+    &-third
+      margin: 0
+      font-size: 62px
+      font-family: $font-ubuntu-bold, sans-serif
+      color: $color-blue
 
     &-two
       padding: 60px
-      margin: 0
-      font-size: 62px
-      font-family: Ubuntu-Bold, sans-serif
-      color: rgb(69, 146, 220)
 
     &-third
       padding: 30px
-      margin: 0
-      font-size: 62px
-      font-family: Ubuntu-Bold, sans-serif
-      color: rgb(69, 146, 220)
-
 
   &__name
     margin-top: 45px
     font-size: 25px
-    font-family: Ubuntu-Regular, sans-serif
-    color: rgb(69, 146, 220)
+    font-family: $font-ubuntu-regular, sans-serif
+    color: $color-blue
+
+    &-two,
+    &-third,
+    &-four
+      font-size: 25px
+      font-family: $font-ubuntu-regular, sans-serif
+
 
     &-two
       margin-top: 20px
-      font-size: 25px
-      font-family: Ubuntu-Regular, sans-serif
-      color: rgb(69, 146, 220)
+      color: $color-blue
 
     &-third
       margin-top: 60px
-      font-size: 25px
-      font-family: Ubuntu-Regular, sans-serif
-      color: rgb(69, 146, 220)
+      color: $color-blue
 
     &-four
       margin-top: 50px
-      color: rgb(51, 162, 80)
-      font-size: 25px
-      font-family: Ubuntu-Regular, sans-serif
+      color: $color-green
+
 
   &__desc
     margin: 25px 20px 270px 20px
     font-size: 14px
-    font-family: Ubuntu-Medium, sans-serif
-    color: rgb(129, 129, 129)
+    font-family: $font-ubuntu-medium, sans-serif
+    color: $color-grey-black
     line-height: 1.643
 
   &__btn
@@ -537,18 +537,18 @@
     margin: 450px auto
     padding: 20px 20px
     border-radius: 4px
-    background: rgb(63, 174, 92)
+    background: $color-green
     text-decoration: none
     font-size: 37px
-    font-family: Ubuntu-Regular, sans-serif
-    color: rgb(255, 255, 255)
+    font-family: $font-ubuntu-regular, sans-serif
+    color: $color-white
     position: absolute
     left: 0
     right: 0
     width: 320px
 
     &:hover
-      background: rgb(69, 179, 41)
+      background: $color-green-hover
 
 
 .b-sixth-section
@@ -557,27 +557,27 @@
   &__name
     margin: 100px 0 50px 0
     font-size: 37px
-    font-family: Ubuntu-Regular, sans-serif
-    color: rgb(86, 86, 86)
+    font-family: $font-ubuntu-regular, sans-serif
+    color: $color-grey-black
     line-height: 1.2
     text-align: center
 
   &__item
     width: 840px
     margin: 10px auto
-    background: #509ae4
-    border: 1px solid #d1d1d1
+    background: $color-blue-lighter
+    border: 1px solid $color-grey
     border-radius: 5px
-    box-shadow: 0 0 10px #ddd
+    box-shadow: 0 0 10px $color-grey-dark
     padding: 14px 0
 
     &-picture
       width: 840px
       margin: 10px auto
-      background: #509ae4
-      border: 1px solid #d1d1d1
+      background: $color-blue-lighter
+      border: 1px solid $color-grey
       border-radius: 5px
-      box-shadow: 0 0 10px #ddd
+      box-shadow: 0 0 10px $color-grey-dark
       padding: 14px 0
       position: relative
       
@@ -590,8 +590,8 @@
   &__title
     border-radius: 5px
     font-size: 25px
-    font-family: Ubuntu-Regular, sans-serif
-    color: rgb(255, 255, 255)
+    font-family: $font-ubuntu-regular, sans-serif
+    color: $color-white
     font-weight: normal
     margin: 0
 
@@ -608,7 +608,7 @@
       top: 8px
       left: 10px
       border: 7px solid transparent
-      border-left: 7px solid #ffffff
+      border-left: 7px solid $color-white
 
   &__ul
     padding: 5px
@@ -620,10 +620,10 @@
     list-style-position: inside
     height: 40px
     position: relative
-    color: #ffffff
+    color: $color-white
 
     &:hover
-      color: #cccccc
+      color: $color-grey-hover
 
   &__wrap
     position: absolute
@@ -631,19 +631,19 @@
     left: -5px
     font-size: 14px
     padding: 5px
-    font-family: Ubuntu-Regular, sans-serif
-    border-bottom: 1px solid #cfcfcf
+    font-family: $font-ubuntu-regular, sans-serif
+    border-bottom: 1px solid $color-grey
     display: flex
     align-items: center
 
     &-station
-      color: #ffffff
+      color: $color-white
       padding: 10px 0
       margin: 0 0 0 20px
       width: 190px
 
       &:hover
-        color: #cccccc
+        color: $color-grey-hover
 
     &-text
       margin: 0 40px 0 205px
@@ -651,7 +651,7 @@
 
 
       & span
-        color: #000000
+        color: $color-black
         margin-left: 5px
 
     &-btn
@@ -659,25 +659,25 @@
         padding: 5px
         text-decoration: none
         margin: 0 10px
-        color: #cfcfcf
-        border: 1px solid #cfcfcf
+        color: $color-grey
+        border: 1px solid $color-grey
         border-radius: 3px
 
         &:hover
-          color: #3481cd
-          border: 1px solid #3481cd
+          color: $color-blue
+          border: 1px solid $color-blue
 
       &-order
         padding: 5px
         text-decoration: none
-        color: #ffffff
-        border: 1px solid #ffffff
+        color: $color-white
+        border: 1px solid $color-white
         border-radius: 3px
 
         &:hover
-          color: #ffffff
-          background: #f17c2d
-          border: 1px solid #f17c2d
+          color: $color-white
+          background: $color-orange
+          border: 1px solid $color-orange
 
 
 
@@ -693,15 +693,15 @@
 
   &-a
     display: block
-    color: #000
+    color: $color-black
     font-size: 14px
-    font-family: Ubuntu-Regular, sans-serif
+    font-family: $font-ubuntu-regular, sans-serif
 
   &-post
     margin-top: 80px
     font-size: 12px
-    font-family: Ubuntu-Regular, sans-serif
-    color: rgb(195, 195, 195)
+    font-family: $font-ubuntu-regular, sans-serif
+    color: $color-grey-dark
 
 
 
