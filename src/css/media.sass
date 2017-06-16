@@ -1,0 +1,54 @@
+@media screen and (max-width: 768px)
+  .container
+    width: 100%
+
+  .b-nav
+    height: 100%
+
+  .b-nav__toggle
+    display: block
+
+  .b-nav__logo
+    margin: 0 auto
+    padding: 0
+
+  .b-nav__menu
+    height: 0
+    background: white
+    float: none
+    position: absolute
+    overflow: hidden
+    line-height: normal
+    top: 80px
+    right: 0
+    left: 0
+    margin: 0
+    padding: 0
+    //z-index: 3
+
+  .b-nav__li
+    display: block
+    border-bottom: 1px solid $color-grey
+    margin-right: 0
+
+    &:hover
+      background: $color-light-blue
+
+  .b-nav__a
+    padding: 15px
+
+    &:hover
+      color: $color-black
+      font-weight: 900
+
+  .b-nav__btn-message
+    display: none
+
+  .b-nav__btn-login
+    width: 40px
+    height: 40px
+    position: absolute
+    top: 25%
+    right: 15px
+    background: $color-light-blue
+    border-radius: 3px

@@ -26,3 +26,9 @@ $(document).ready(function(){
 
     });
 });
+
+
+
+$(".b-nav__toggle").on("click", function(){
+    $(".b-nav__menu").toggleClass("active");
+});
