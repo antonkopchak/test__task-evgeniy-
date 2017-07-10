@@ -10,7 +10,8 @@ $(document).ready(function(){
         moveSlides: 3,
         slideMargin: 10,
         auto: true,
-        controls: true
+        controls: true,
+        slideWidth: true
     });
 });
 

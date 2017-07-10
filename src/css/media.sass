@@ -1,16 +1,42 @@
-@media screen and (max-width: 768px)
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (max-width: 1024px)
   .container
     width: 100%
 
   .b-nav
     height: 100%
 
+  .b-nav__menu
+    margin: 0 0 0 4px
+
+  .b-nav__li
+    padding: 0 3px
+
+  .b-nav__btns
+    width: 80px
+    margin: 0
+
+  .b-first-section__li
+    padding: 0 2%
+
+  .b-second-section__order-name
+    margin-left: 180px
+
+  .b-second-section__order-img
+    left: 765px
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (max-width: 991px)
+
   .b-nav__toggle
     display: block
 
   .b-nav__logo
     margin: 0 auto
-    padding: 0
+    padding: 0 20px
+
+    & img
+      width: 100%
 
   .b-nav__menu
     height: 0
@@ -52,3 +78,189 @@
     right: 15px
     background: $color-light-blue
     border-radius: 3px
+
+  .b-first-section
+    .b-first-section__name:after
+      content: normal
+
+    &__wrapper
+      height: 65px
+      display: flex
+      align-items: center
+      margin-top: 185px
+
+    &__wrapper-name
+      display: inline-block
+      font-family: $font-opensans-light, sans-serif
+      font-size: 14px
+      color: $color-grey
+      padding-right: 20px
+
+    &__menu
+      display: none
+
+    &__dropdown
+      display: inline-block
+      margin: 0 auto
+      height: 45px
+      width: 230px
+      background: $color-blue-lighter
+      color: $color-white
+      border-radius: 3px
+      padding: 0 10px
+      font-family: $font-opensans-light, sans-serif
+      font-weight: 900
+
+    &__clouds-second
+      top: 60px
+
+    &__clouds-third
+      top: -270px
+
+    &__clouds-text
+      display: none
+
+  .b-second-section__pluses
+    width: 50%
+    padding: 20px
+
+  .b-second-section__circle,
+  .b-second-section__circle-change
+    width: 180px
+    height: 180px
+    margin: 100px auto 0
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .b-second-section__order-img
+    position: static
+    display: none
+  .b-second-section__order
+    width: 100%
+
+    &-name
+      margin-left: 20px
+      font-size: 30px
+
+    &-btn
+      width: 50%
+      font-size: 25px
+      margin-left: 15px
+      margin-right: 5px
+
+  .b-third-section
+    &:after
+      content: normal
+
+    &__name
+      top: 130px
+
+    &__pictures-four
+      right: 50px
+
+  .b-four-section
+
+    &__comment
+      width: 360px!important
+      margin: 85px 95px 0
+      &:after
+        top: 180px
+
+  .b-fifth-section
+    &:before
+      top: 1090px
+
+    &__position
+      min-height: 1090px
+
+    &__place
+      width: 100%
+
+    &__circle,
+    &__circle-two,
+    &__circle-third,
+    &__circle-green
+      margin: 0 10px 0 30%
+      float: left
+      width: 70px
+      height: 70px
+      background: $color-blue
+
+    &__circle-four
+      display: none
+
+    &__circle-green
+      top: 0
+      left: 0
+      right: 0
+
+    &__name,
+    &__name-two,
+    &__name-third,
+    &__name-four
+      margin: 20px 0 0 40px
+      text-align: left
+
+    &__number,
+    &__number-two,
+    &__number-third
+      padding: 10px
+      font-size: 40px
+      color: $color-white
+
+    &__desc
+      margin: 30px 0 75px
+
+    &__btn
+      position: static
+
+  .b-sixth-section
+
+    &__item
+      width: 90%
+
+      &-picture
+        width: 90%
+
+        &:after
+          content: normal
+
+  .b-sixth-section__ul
+    margin: 0 20px
+  .b-sixth-section__wrap
+    padding: 0
+    width: 100%
+    height: 40px
+  .b-sixth-section__wrap-station
+    width: 0
+  //.b-sixth-section__wrap-text
+  //  margin-left: 25%
+  .footer__position
+    display: inline-block
+
+  .footer__roster-one
+    float: left
+    margin: 0
+    width: 50%
+
+  .footer__roster-one,
+  .footer__roster-two
+    margin-top: 75px
+
+    & li
+      display: block
+      margin: 0 0 30px
+      text-align: left
+
+  .footer__roster-third
+    margin-top: 180px
+    padding: 0
+
+    & li:first-child
+      margin-bottom: 20px
+      display: block
+
+  .footer__roster-post
+    margin: 70px 0 50px
+
